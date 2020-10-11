@@ -7,11 +7,11 @@ inhibit_all_warnings!
 use_frameworks!
 
 def hacomaExtensions
-    pod 'HacomaExtensions', '1.0.1'
+    pod 'HacomaExtensions', '1.0.2'
 end
 
 def hacomaNetwork
-    pod 'HacomaNetwork', '1.0.1'
+    pod 'HacomaNetwork', '1.0.2'
 end
 
 target :'Auth' do
