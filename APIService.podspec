@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'APIService'
-  s.version = '1.0.0'
+  s.version = '1.0.1'
   s.license = { :type => 'MIT' }
   s.homepage = 'https://github.com/hacoma/Synstagram-APIService'
   s.authors = { 'hacoma' => 'hacoma92@gmail.com' }
@@ -11,12 +11,12 @@ Pod::Spec.new do |s|
 
   s.source = { :git => 'https://github.com/hacoma/Synstagram-APIService.git', :tag => s.version }
 
-  s.dependency 'HacomaExtensions', '1.0.0'
+  s.dependency 'HacomaExtensions', '1.0.1'
 
   s.default_subspec = :none
 
   s.subspec 'Auth' do |ss|
     ss.source_files = 'APIService/Module/Auth/Source/*.swift'
-    ss.dependency 'HacomaNetwork', '1.0.0'
+    ss.dependency 'HacomaNetwork', '1.0.1'
   end
 end
