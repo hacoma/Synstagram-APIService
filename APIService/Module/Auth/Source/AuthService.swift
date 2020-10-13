@@ -10,9 +10,12 @@ import HacomaNetwork
 
 public final class AuthService {
     
-    public typealias LoginCompletion = (Result<AuthLoginModel.Response.DTO, AuthLoginModel.Response.Error>) -> Void
-    
     private static let provider = NetworkProvider<AuthNetworkTarget>()
+}
+
+extension AuthService {
+    
+    public typealias LoginCompletion = (Result<AuthLoginModel.Response.DTO, AuthLoginModel.Response.Error>) -> Void
     
     public static func requestIsAlreadyLogin(completion: @escaping LoginCompletion) {
         let target = AuthNetworkTarget(route: .isAlreadyLogin)

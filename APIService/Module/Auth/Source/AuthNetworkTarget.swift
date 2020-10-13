@@ -9,7 +9,7 @@ import Foundation
 import HacomaExtensions
 import HacomaNetwork
 
-struct AuthNetworkTarget: NetworkTarget {
+struct AuthNetworkTarget {
     
     enum Route {
         case isAlreadyLogin
@@ -22,6 +22,9 @@ struct AuthNetworkTarget: NetworkTarget {
     init(route: Route) {
         self.route = route
     }
+}
+
+extension AuthNetworkTarget: NetworkTarget {
     
     var baseURL: URL {
         let URLString = "https://photo.domain.com/photo/webapi"
