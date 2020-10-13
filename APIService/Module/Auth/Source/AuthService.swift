@@ -10,14 +10,14 @@ import HacomaNetwork
 
 public final class AuthService {
     
-    private static let provider = NetworkProvider<AuthNetworkTarget>()
+    private let provider = NetworkProvider<AuthNetworkTarget>()
 }
 
 extension AuthService {
     
     public typealias LoginCompletion = (Result<AuthLoginModel.Response.DTO, AuthLoginModel.Response.Error>) -> Void
     
-    public static func requestIsAlreadyLogin(completion: @escaping LoginCompletion) {
+    public func requestIsAlreadyLogin(completion: @escaping LoginCompletion) {
         let target = AuthNetworkTarget(route: .isAlreadyLogin)
         
         provider.request(target: target) { result in
@@ -34,7 +34,7 @@ extension AuthService {
         }
     }
     
-    public static func requestLogin(request: AuthLoginModel.Request, completion: @escaping LoginCompletion) {
+    public func requestLogin(request: AuthLoginModel.Request, completion: @escaping LoginCompletion) {
         let target = AuthNetworkTarget(route: .login(request: request))
         
         provider.request(target: target) { result in
@@ -56,7 +56,7 @@ extension AuthService {
     
     public typealias LogoutCompletion = (Result<AuthLogoutModel.Response.DTO, AuthLogoutModel.Response.Error>) -> Void
     
-    public static func requestLogout(completion: @escaping LogoutCompletion) {
+    public func requestLogout(completion: @escaping LogoutCompletion) {
         let target = AuthNetworkTarget(route: .logout)
         provider.request(target: target) { result in
             switch result {

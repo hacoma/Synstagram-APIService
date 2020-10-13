@@ -63,4 +63,12 @@ extension AuthNetworkTarget: NetworkTarget {
         
         return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
     }
+    
+    var headers: [String: String]? {
+        return nil
+    }
+    
+    var timeoutInterval: TimeInterval {
+        return 10
+    }
 }

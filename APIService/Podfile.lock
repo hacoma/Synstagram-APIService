@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (5.2.2)
   - HacomaExtensions (1.0.2)
-  - HacomaNetwork (1.0.2):
+  - HacomaNetwork (1.0.4):
     - Moya (= 14.0.0)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
@@ -10,7 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - HacomaExtensions (= 1.0.2)
-  - HacomaNetwork (= 1.0.2)
+  - HacomaNetwork (= 1.0.4)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -23,9 +23,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
   HacomaExtensions: 0d243cb247f4046ce014e040938813f36d832a8c
-  HacomaNetwork: efa22825d5ab84804b9fe66d19ec7f608e1166c3
+  HacomaNetwork: b0e8702469cbec1d26c0b30993084e40a0eaf754
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
 
-PODFILE CHECKSUM: 022edb969c08909fde1a283df0444f6652976994
+PODFILE CHECKSUM: 49946fd9db01f0b83a7be3a90c6604761a1bee31
 
 COCOAPODS: 1.9.3
