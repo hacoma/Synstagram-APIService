@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'APIService'
-  s.version = '1.0.4'
+  s.version = '1.0.5'
   s.license = { :type => 'MIT' }
   s.homepage = 'https://github.com/hacoma/Synstagram-APIService'
   s.authors = { 'hacoma' => 'hacoma92@gmail.com' }

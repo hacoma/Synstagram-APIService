@@ -11,6 +11,10 @@ import HacomaNetwork
 public final class AuthService {
     
     private let provider = NetworkProvider<AuthNetworkTarget>()
+    
+    public init() {
+        // available outside of the framework
+    }
 }
 
 extension AuthService {

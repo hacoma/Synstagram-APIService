@@ -53,9 +53,9 @@
 			isa = PBXGroup;
 			children = (
 				C8C9FF8B25331052005FB60E /* AuthNetworkTarget.swift */,
-				C8C9FF912533111B005FB60E /* AuthService.swift */,
 				C8C9FF9525331137005FB60E /* AuthLoginModel.swift */,
 				C8C9FF9925331148005FB60E /* AuthLogoutModel.swift */,
+				C8C9FF912533111B005FB60E /* AuthService.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
